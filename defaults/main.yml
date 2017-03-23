@@ -26,10 +26,10 @@ hwraid_device_database:
   # 3Ware Eskalad
   # http://hwraid.le-vert.net/wiki/3Ware
   - module:   '3w_xxxx'
-    packages: [ 'tw_cli', '3ware-status' ]
+    packages: [ 'tw-cli', '3ware-status' ]
     daemons: [ '3ware-statusd' ]
   - module:   '3w_9xxx'
-    packages: [ 'tw_cli', '3ware-status' ]
+    packages: [ 'tw-cli', '3ware-status' ]
     daemons: [ '3ware-statusd' ]
 
   # LSI Fusion MPT SAS
@@ -56,8 +56,8 @@ hwraid_device_database:
   # LSI MegaRAID SAS
   # http://hwraid.le-vert.net/wiki/LSIMegaRAIDSAS
   - module:   'megaraid_sas'
-    packages: [ 'megactl', 'megaraid-status' ]
-    daemons: [ 'megaclisas-statusd' ]
+    packages: [ 'megacli', 'megactl', 'megaraid-status' ]
+    daemons: [ 'megaraidsas-statusd' ]
 
   # Adaptec AACRaid
   # http://hwraid.le-vert.net/wiki/Adaptec
