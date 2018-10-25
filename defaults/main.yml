@@ -1,10 +1,10 @@
 ---
 
 # OS distribution used to lookup available releases
-hwraid_distribution: '{{ ansible_distribution }}'
+hwraid_distribution: '{{ ansible_facts.distribution }}'
 
 # OS release used to lookup available releases
-hwraid_release: '{{ ansible_distribution_release }}'
+hwraid_release: '{{ ansible_facts.distribution_release }}'
 
 # Ignore specified kernel modules
 hwraid_blacklist: []
