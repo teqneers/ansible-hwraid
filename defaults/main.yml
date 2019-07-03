@@ -18,7 +18,7 @@ hwraid_repository_key_url: 'http://hwraid.le-vert.net/debian/hwraid.le-vert.net.
 # it is important to have the latest release first
 hwraid_distribution_releases:
   'Debian': [ 'jessie', 'wheezy', 'squeeze','sid' ]
-  'Ubuntu': [ 'xenial', 'wily' , 'vivid', 'trusty', 'precise' ]
+  'Ubuntu': [ 'bionic', 'xenial', 'trusty', 'precise' ]
 
 # List of known RAID device drivers and corresponding packages
 hwraid_device_database:
@@ -70,4 +70,3 @@ hwraid_device_database:
   - module:   'cciss'
     packages: [ 'cciss-vol-status' ]
     daemons: [ 'cciss-vol-statusd' ]
-
